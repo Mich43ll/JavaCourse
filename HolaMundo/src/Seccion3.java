@@ -45,5 +45,19 @@ public class Seccion3 {
         //TIPOS PRIMITIVOS FLOTANTE: FLOAT, DOUBLE
         System.out.println("\nTIPOS PRIMITIVOS FLOTANTES");
         System.out.println("FLOAT");
+        float numeroFloat = 10.0F;
+        /*
+        todos los numeros decimales siempre se toman como double entonces se tiene que 
+        escribir la F o convertirlo a tipo float para poder utilizarlo como tipo float
+        */
+        System.out.println("numeroFloar = " + numeroFloat);
+        System.out.println("Valor minimo: "+Float.MIN_VALUE);
+        System.out.println("valor maximo: "+Float.MAX_VALUE);
+        
+        System.out.println("\nDOUBLE");
+        double numeroDouble = 10.0;
+        System.out.println("numeroDouble = " + numeroDouble);
+        System.out.println("Valor minimo: "+Double.MIN_VALUE);
+        System.out.println("valor maximo: "+Double.MAX_VALUE);
     }
 }

@@ -64,22 +64,41 @@ public class Seccion4 {
         var m = l--; //primero se usa el valor y despues se incrementa
         System.out.println("l = " + l);
         System.out.println("m = " + m);
-        
-        
+
         //OPERADORES DE IGUALDAD Y RELACIONALES
         var num1 = 3;
         var num2 = 2;
-        var num3= (num1 == num2);
+        var num3 = (num1 == num2);
         System.out.println("num3 = " + num3);
         var num4 = (num1 != num2);
         System.out.println("num4 = " + num4);
-        
+
         //USO DE CADENAS
-        var cadena1= "Hola";
+        var cadena1 = "Hola";
         var cadena2 = "Hola";
-        var string1= cadena1 == cadena2;//compara referencias de objetos
+        var string1 = cadena1 == cadena2;//compara referencias de objetos
         System.out.println("string1 = " + string1);
-        var string2= cadena1.equals(cadena2);
+        var string2 = cadena1.equals(cadena2);
         System.out.println("string2 = " + string2);
+
+        //OPERADORES RELACIONALES
+        System.out.println("OPERADORES RELACIONALES");
+        var p = a >= b;
+        System.out.println("p = " + p);
+
+        if (a % 2 == 0) {
+            System.out.println("Es numero par");
+        } else {
+            System.out.println("Es numero impar");
+        }
+        
+        var edad = 15;
+        var adulto = 18;
+        if (edad >= adulto){
+            System.out.println("Es un adulto");
+        }else {
+            System.out.println("Es menor de edad");
+        }
+        
     }
 }

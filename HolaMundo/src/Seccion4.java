@@ -91,14 +91,46 @@ public class Seccion4 {
         } else {
             System.out.println("Es numero impar");
         }
-        
+
         var edad = 15;
         var adulto = 18;
-        if (edad >= adulto){
+        if (edad >= adulto) {
             System.out.println("Es un adulto");
-        }else {
+        } else {
             System.out.println("Es menor de edad");
         }
-        
+
+        //OPERADORES CONDICIONALES 
+        System.out.println("OPERADORES CONDICIONALES");
+        var valor = 8;
+        var valorMinimo = 0;
+        var varloMaximo = 10;
+        //Operador AND
+        var result = valor >= 0 && a <= 10;
+        if (result) {
+            System.out.println("Dentro de rango");
+        } else {
+            System.out.println("Fuera de rango");
+        }
+
+        //Operador OR
+        var vacaciones = true;
+        var diaDescanso = false;
+
+        if (vacaciones || diaDescanso) {
+            System.out.println("El padre puede asistir al juego del hijo");
+        } else {
+            System.out.println("El padre esta ocpado");
+        }
+
+        //OPERADOR TERNARIO
+        System.out.println("OPERADOR TERNARIO");
+        var resultado1 = (3 > 3) ? "Verdad" : "Falso";
+        System.out.println("resultado1 = " + resultado1);
+
+        var number = 9;
+        resultado1 = (number % 2 == 0) ? "Par" : "Impar";
+        System.out.println("number = " + resultado1);
+
     }
 }

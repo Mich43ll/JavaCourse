@@ -11,6 +11,7 @@ public class Aritmetica {
         
     }
 
+    //Constructor con argumentos
     public Aritmetica(int a, int b){
         this.a= a;
         this.b = b;

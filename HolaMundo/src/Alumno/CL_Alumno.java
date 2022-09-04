@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class CL_Alumno {
     int nota;
     int acumulador = 0; 
-    String nombre; 
-    String apellido;
+    public String nombre; 
+    public String apellido;
 
     public void notaTotal(){
         var scaner = new Scanner(System.in);

@@ -12,5 +12,13 @@ public class TestFinal{
 
         //Persona.CONSTANTE= 5;
         System.out.println(Persona.CONSTANTE);
+
+        final Persona persona1 = new Persona();
+        //persona1 = new Persona(); //al marcarse el objeto como final 
+        //no se puede volver a hacer referencia a otra clase
+
+        persona1.setNombre("Michaell");
+        System.out.println(persona1.getNombre());
+        //Pero si podemos modificar el valor de sus atributos
     }
 }

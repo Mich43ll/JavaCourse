@@ -5,9 +5,16 @@ public class Empleado extends Persona{
     private double sueldo;
     private static int contadorEmpleado;
 
-    public Empleado(String nombre, double sueldo){
-        super(nombre);
+    //Cuando tenemos mas de un constructor en una clase, esto se le conoce como Contructor sobrecargado
+    public Empleado(){
         this.idEmpleado = ++Empleado.contadorEmpleado;
+    }
+
+    public Empleado(String nombre, double sueldo){
+        //No podemos utilizar this y super en el mismo contructor
+        //super(nombre); para traer los parametros de la clase padre
+        this(); //con esto traemos al constructor vacio
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 

@@ -3,12 +3,12 @@ package sistemaVenta.mx.com.gm.ventas;
 public class Orden {
     private int idOrden;
     private Producto productos[];
-    private int contadorOrdenes;
+    private static int contadorOrdenes;
     private int contadorProducto;
     private static final int MAX_PRODUCTOS = 10;
 
     public Orden() {
-        this.idOrden += contadorOrdenes;
+        this.idOrden = ++Orden.contadorOrdenes;
         this.productos = new Producto[MAX_PRODUCTOS];
     }
 
@@ -30,7 +30,7 @@ public class Orden {
     }
 
     public void mostrarOrden(){
-        System.out.println("Orden #"+(idOrden+1));
+        System.out.println("Orden #"+contadorOrdenes);
         double totalOrden = this.calcularTotal();
         System.out.println("Total a pagar: "+totalOrden);
         for(int i = 0; i < this.contadorProducto; i++){
